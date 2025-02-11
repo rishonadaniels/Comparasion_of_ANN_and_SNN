@@ -3,6 +3,7 @@
 This repository contains the implementation, results, and documentation for the project **"Comparison of Artificial Neural Networks (ANNs) and Spiking Neural Networks (SNNs)."**\
 The goal of this research is to analyze the **differences in architecture, training methods, efficiency, and real-world applications** between ANNs, SNNs, Vision Transformers (ViT), and a **Hybrid ViT-SNN model**.
 
+![A detailed diagram illustrating the architectures of Artificial Neural Networks (ANN), Spiking Neural Networks (SNN), Vision Transformers (ViT), and a](https://github.com/user-attachments/assets/6c8441fc-ae7e-41a0-ae79-b72ff307d75e)
 
 ---
 
@@ -58,10 +59,16 @@ pip install numpy pandas matplotlib torch torchvision time snntorch transformers
 - Fully connected layers trained using **backpropagation** and **gradient descent**.
 - Suitable for classification tasks but computationally intensive.
 
+  ![The-Architecture-of-a-Neural-Network](https://github.com/user-attachments/assets/5fe0ac4c-299f-4619-91c8-067167c49c61)
+
+
 ### 🔹 Convolutional Neural Network (CNN)
 
 - Uses convolutional layers for **feature extraction**.
 - Outperforms ANNs on image-based tasks like **MNIST and Fashion-MNIST**.
+
+  ![1680532048475](https://github.com/user-attachments/assets/990efd62-ec5b-477c-9b9b-fe4b31b864cd)
+
 
 ### 🔹 Spiking Neural Network (SNN)
 
@@ -69,10 +76,16 @@ pip install numpy pandas matplotlib torch torchvision time snntorch transformers
 - Trained using **Surrogate Gradient Descent**.
 - **Energy-efficient** but requires specialized training techniques.
 
+  ![SNN-architectures](https://github.com/user-attachments/assets/53df3b57-b481-4464-9f99-466496824736)
+
+
 ### 🔹 Vision Transformer (ViT)
 
 - A **pre-trained transformer-based model** fine-tuned on CIFAR-10.
 - Uses **self-attention** instead of convolutions, achieving **state-of-the-art accuracy**.
+
+  ![ 21 52 47](https://github.com/user-attachments/assets/a5c943b3-7bb7-4093-947a-a7c4fb10ce1b)
+
 
 ### 🔹 Hybrid ViT-SNN Model
 
@@ -101,8 +114,9 @@ Comparison Table:
 | SNN    | Fashion-MNIST | 86.2%    | 835.68 sec  | 3.04 MB    |
 | Vit    | Fashion-MNIST | 90.01%   | 394.52  sec | 327.38 MB  |
 | ANN    | CIFAR-10      | 57.68%   | 286.66 sec  | 90.83 MB   |
+| CNN    | CIFAR-10      | 91.08%   | 2172.99 sec  | 12.42 MB  |
 | ViT    | CIFAR-10      | 93.45%   | 8424.16 sec | 327.38 MB  |
-| ViTSNN | CIFAR-10      | 73.38%   | 12267.26 sec| 21.15 MB   |
+| ViTSNN | CIFAR-10      | 73.38%   | 12267.26 sec| ---   |
 
 
 ---
