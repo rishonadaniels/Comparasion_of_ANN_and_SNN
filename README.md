@@ -90,16 +90,19 @@ We evaluated these models on the following datasets:
 
 Comparison Table:
 
-| Model  | Dataset         | Accuracy | Training Time | Model Size | Energy Efficiency |
-|--------|---------------|----------|--------------|------------|------------------|
-| ANN    | MNIST         | 97.5%    | 137.82 sec  | 0.39 MB    | High Power Usage |
-| CNN    | MNIST         | 99.1%    | 62.81 sec   | 1.61 MB    | Moderate Power Usage |
-| SNN    | MNIST         | 94.22%   | 638 sec     | 3.04 MB    | Low Power Usage |
-| ANN    | Fashion-MNIST | 89.25%   | 294.02 sec  | 0.39 MB    | High Power Usage |
-| CNN    | Fashion-MNIST | 93.08%   | 285.56 sec  | 3.69 MB    | Moderate Power Usage |
-| SNN    | Fashion-MNIST | 86.2%    | 835.68 sec  | 3.04 MB    | Low Power Usage |
-| ANN    | CIFAR-10      | 57.68%   | 286.66 sec  | 90.83 MB   | High Power Usage |
-| ViT    | CIFAR-10      | 93.45%   | 8424.16 sec | 327.38 MB  | High Power Usage |
+| Model  | Dataset         | Accuracy | Training Time | Model Size |
+|--------|---------------|----------|--------------|------------|
+| ANN    | MNIST         | 97.5%    | 137.82 sec  | 0.39 MB    |
+| CNN    | MNIST         | 99.1%    | 62.81 sec   | 1.61 MB    |
+| SNN    | MNIST         | 94.22%   | 638 sec     | 3.04 MB    |
+| Vit    | MNIST         | 99.28%   | 4237.52 sec | 327.38 MB  |
+| ANN    | Fashion-MNIST | 89.25%   | 294.02 sec  | 0.39 MB    |
+| CNN    | Fashion-MNIST | 93.08%   | 285.56 sec  | 3.69 MB    |
+| SNN    | Fashion-MNIST | 86.2%    | 835.68 sec  | 3.04 MB    |
+| Vit    | Fashion-MNIST | 90.01%   | 394.52  sec | 327.38 MB  |
+| ANN    | CIFAR-10      | 57.68%   | 286.66 sec  | 90.83 MB   |
+| ViT    | CIFAR-10      | 93.45%   | 8424.16 sec | 327.38 MB  |
+| ViTSNN | CIFAR-10      | 73.38%   | 12267.26 sec| 21.15 MB   |
 
 
 ---
