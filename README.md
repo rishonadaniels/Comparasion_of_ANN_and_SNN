@@ -1,19 +1,21 @@
 # 🔬 ANN vs. SNN: A Comparative Analysis  
 
-This repository contains the implementation, results, and documentation for the project **"Comparison of Artificial Neural Networks (ANNs) and Spiking Neural Networks (SNNs)."**  
-The goal of this research is to analyze the **differences in architecture, training methods, efficiency, and real-world applications** between ANNs, SNNs, and **Vision Transformers (ViT)**.
+This repository contains the implementation, results, and documentation for the project **"Comparison of Artificial Neural Networks (ANNs) and Spiking Neural Networks (SNNs)."**\
+The goal of this research is to analyze the **differences in architecture, training methods, efficiency, and real-world applications** between ANNs, SNNs, Vision Transformers (ViT), and a **Hybrid ViT-SNN model**.
+
 
 ---
 
 ## 📌 Project Overview  
 
 ### Why Compare ANN and SNN?
-Artificial Neural Networks (ANNs) have been the foundation of deep learning for years, excelling in tasks such as **image classification, natural language processing, and reinforcement learning**. However, they come with high **computational costs and energy consumption**.  
-Spiking Neural Networks (SNNs) attempt to **mimic biological neurons**, offering event-driven computation and energy efficiency, but they are harder to train and optimize.  
-We also include **Vision Transformers (ViT)** to examine their effectiveness in modern image recognition.
+Artificial Neural Networks (ANNs) have been the foundation of deep learning for years, excelling in tasks such as **image classification, natural language processing, and reinforcement learning**. However, they come with high **computational costs and energy consumption**.\
+Spiking Neural Networks (SNNs) attempt to **mimic biological neurons**, offering event-driven computation and energy efficiency, but they are harder to train and optimize.\
+We also include **Vision Transformers (ViT)** and a **Hybrid ViT-SNN Model**, examining their effectiveness in modern image recognition and energy-efficient AI.
 
 This project aims to:
-- Compare the performance of **ANNs, SNNs, CNNs, and ViTs** across different datasets.
+
+- Compare the performance of **ANNs, SNNs, CNNs, ViTs, and Hybrid ViT-SNN** across different datasets.
 - Evaluate their **accuracy, training time, model size, and energy efficiency**.
 - Provide insights into the **suitability of each architecture** for different AI applications.
 
@@ -49,39 +51,37 @@ pip install numpy pandas matplotlib torch torchvision time snntorch transformers
 
 ---
 
-## 📊 Key Features
+## 🏗 Model Architectures Implemented
 
-1. **ANN, CNN, and SNN Implementations**:
-- Includes training and evaluation scripts for feedforward ANNs, CNNs, and SNNs.
-- SNN implementation supports surrogate gradient learning.
+### 🔹 Artificial Neural Network (ANN)
 
-2. **Vision Transformer (ViT) Fine-Tuning**:
-- Fine-tuned a pre-trained ViT model on CIFAR-10 for state-of-the-art accuracy.
+- Fully connected layers trained using **backpropagation** and **gradient descent**.
+- Suitable for classification tasks but computationally intensive.
 
-3. **Comprehensive Performance Metrics**:
-- Accuracy, training time, model size, and energy efficiency comparison across architectures.
+### 🔹 Convolutional Neural Network (CNN)
 
-4. **Detailed Results**:
-- Includes visualizations, tables, and logs of experiments conducted on MNIST, Fashion-MNIST, and CIFAR-10.
+- Uses convolutional layers for **feature extraction**.
+- Outperforms ANNs on image-based tasks like **MNIST and Fashion-MNIST**.
 
----
+### 🔹 Spiking Neural Network (SNN)
 
-## 🧪 How to Run
+- Uses **spike-based computation** and **event-driven processing**.
+- Trained using **Surrogate Gradient Descent**.
+- **Energy-efficient** but requires specialized training techniques.
 
-1. Train models:
-- Example (training an ANN on MNIST):
-  ```
-  python scripts/train_ann.py --dataset mnist --epochs 20
-  ```
+### 🔹 Vision Transformer (ViT)
 
-2. Fine-tune ViT:
+- A **pre-trained transformer-based model** fine-tuned on CIFAR-10.
+- Uses **self-attention** instead of convolutions, achieving **state-of-the-art accuracy**.
 
+### 🔹 Hybrid ViT-SNN Model
 
-
-
-3. Visualize results:
+- Combines **ViT with SNN** by replacing activation functions (ReLU/GELU) with **Leaky Integrate-and-Fire (LIF) spiking neurons**.
+- Extracts features using ViT while leveraging the energy efficiency of SNNs.
+- Trained using surrogate gradient descent and membrane potential reset techniques.
 
 ---
+
 ## ⚡ Experiments & Results
 We evaluated these models on the following datasets:
 ✅ MNIST (Handwritten digit classification)
