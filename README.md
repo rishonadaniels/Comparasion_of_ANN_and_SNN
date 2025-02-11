@@ -32,6 +32,9 @@ This project aims to:
  ┃ ┣ 📂 SNN          # SNN models (CIFAR-10, Fashion-MNIST, MNIST)
  ┃ ┣ 📂 ViT          # Vision Transformer models (CIFAR-10, Fashion-MNIST, MNIST)
  ┃ ┣ 📂 ViTSNN       # Hybrid ViT-SNN model
+ ┣ 📂 docs          # Documentation and reports
+ ┃ ┣ 📜 Project Report.pdf   # Main project report
+ ┃ ┣ 📜 Presentation.pdf  # A presentation of the project
  ┣ 📜 README.md      # This document
 ```
 
