@@ -25,7 +25,7 @@ This project aims to:
 ## 📁 Repository Structure  
 
 ```plaintext
-├── models/                  # ANN, SNN, CNN, and ViT model implementations
+├── models/                  # ANN, SNN, CNN, ViT, and ViTSNN model implementations
 └── README.md
 ```
 ---
