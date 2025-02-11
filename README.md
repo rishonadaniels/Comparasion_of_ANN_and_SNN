@@ -22,12 +22,19 @@ This project aims to:
 
 ---
 
-## 📁 Repository Structure  
+## 📁 Repository Structure
 
 ```plaintext
-├── models/                  # ANN, SNN, CNN, ViT, and ViTSNN model implementations
-└── README.md
+📂 ann-vs-snn-comparison
+ ┣ 📂 models         # ANN, SNN, CNN, ViT, Hybrid ViT-SNN implementations
+ ┃ ┣ 📂 ANN          # ANN models (CIFAR-10, Fashion-MNIST, MNIST)
+ ┃ ┣ 📂 CNN          # CNN models (CIFAR-10, Fashion-MNIST, MNIST)
+ ┃ ┣ 📂 SNN          # SNN models (CIFAR-10, Fashion-MNIST, MNIST)
+ ┃ ┣ 📂 ViT          # Vision Transformer models (CIFAR-10, Fashion-MNIST, MNIST)
+ ┃ ┣ 📂 ViTSNN       # Hybrid ViT-SNN model
+ ┣ 📜 README.md      # This document
 ```
+
 ---
 
 ## 🚀 Getting Started
@@ -36,19 +43,20 @@ This project aims to:
 - Python >= 3.8
 - Required Python libraries:
 ```plaintext
-pip install numpy pandas matplotlib torch torchvision time snntorch transformers os
+pip install numpy torch torchvision time snntorch transformers os
 ```
 
 
 
-### Installation
-1. Clone the repository:
+## 🔧 Installation & Setup
 
 
+### Clone the repository
 
-2. Install dependencies:
-
-
+```bash
+git clone https://github.com/rishonadaniels/Comparasion_of_ANN_and_SNN.git
+cd ann-vs-snn-comparison
+```
 
 ---
 
@@ -92,6 +100,42 @@ pip install numpy pandas matplotlib torch torchvision time snntorch transformers
 - Combines **ViT with SNN** by replacing activation functions (ReLU/GELU) with **Leaky Integrate-and-Fire (LIF) spiking neurons**.
 - Extracts features using ViT while leveraging the energy efficiency of SNNs.
 - Trained using surrogate gradient descent and membrane potential reset techniques.
+
+---
+
+## 🔬 How to Run the Experiments
+
+### **Run Jupyter Notebooks**
+To train and evaluate models, open the appropriate notebook in the `models/` directory:
+
+```bash
+jupyter notebook
+```
+Then, open one of the following notebooks:
+
+#### **ANN Models:**
+- `models/ANN/Feedforward_ANN_perceptron_CIFAR.ipynb`
+- `models/ANN/Feedforward_ANN_perceptron_Fashion_MNIST.ipynb`
+- `models/ANN/Feedforward_ANN_perceptron_MNIST.ipynb`
+
+#### **CNN Models:**
+- `models/CNN/CNN_CIFAR10.ipynb`
+- `models/CNN/CNN_perceptron_Fashion_MNIST.ipynb`
+- `models/CNN/CNN_perceptron_MNIST.ipynb`
+
+#### **SNN Models:**
+- `models/SNN/Feedforward_SNN_MNIST.ipynb`
+- `models/SNN/Feedforward_SNN_Fashion_MNIST.ipynb`
+
+#### **ViT Models:**
+- `models/ViT/ViT_CIFAR10.ipynb`
+- `models/ViT/ViT_FASHIONMNIST.ipynb`
+- `models/ViT/ViT_MNIST.ipynb`
+
+#### **Hybrid ViT-SNN Model:**
+- `models/ViTSNN/Hybrid_ViT_SNN_CIFAR10.ipynb`
+
+Once inside a notebook, **run all cells** to train and evaluate the model.
 
 ---
 
