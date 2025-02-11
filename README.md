@@ -36,7 +36,7 @@ This project aims to:
 - Python >= 3.8
 - Required Python libraries:
 ```plaintext
-pip install numpy pandas matplotlib torch torchvision time snntorch transformers
+pip install numpy pandas matplotlib torch torchvision time snntorch transformers os
 ```
 
 
